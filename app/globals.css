@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #ebe7df;
+  --color-surface: #fffdf7;
+  --color-foreground: #15171b;
+  --color-muted: #ded8cc;
+  --color-border: #c8c0b2;
+  --color-graphite: #111827;
+  --color-primary: #f05a1a;
+  --color-primary-hover: #c8430c;
+  --color-on-primary: #ffffff;
+  --color-accent: #2563eb;
+  --color-accent-soft: #dbeafe;
+  --color-warning: #f5b82e;
+  --color-steel: #28313d;
+  --color-concrete: #ebe7df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100dvh;
+  background: linear-gradient(180deg, #f7f2e8 0%, #ebe7df 46%, #f5f0e7 100%);
+  color: var(--color-foreground);
+  font-size: 16px;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(234, 88, 12, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .section-title {
+    @apply max-w-4xl text-3xl font-black leading-tight text-foreground sm:text-4xl lg:text-5xl;
+  }
+
+  .section-lead {
+    @apply mt-4 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+  }
+
+  .btn-primary {
+    @apply focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-card border border-orange-300 bg-primary px-5 py-3 text-center text-base font-black text-on-primary shadow-soft transition hover:bg-primary-hover active:scale-[0.99];
+  }
+
+  .btn-secondary {
+    @apply focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-card border border-slate-400 bg-surface px-5 py-3 text-center text-base font-black text-foreground shadow-sm transition hover:border-slate-700 hover:bg-white active:scale-[0.99];
+  }
+
+  .btn-route {
+    @apply focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-card border border-blue-400 bg-accent px-5 py-3 text-center text-base font-black text-white shadow-soft transition hover:bg-blue-700 active:scale-[0.99];
+  }
+
+  .card {
+    @apply relative overflow-hidden rounded-card border border-border bg-surface shadow-card;
+  }
+
+  .industrial-section {
+    @apply relative overflow-hidden border-y border-black/10 bg-background;
+    background:
+      linear-gradient(135deg, rgba(255, 253, 247, 0.94) 0%, rgba(235, 231, 223, 0.86) 48%, rgba(247, 244, 237, 0.98) 100%),
+      var(--color-background);
+  }
+
+  .industrial-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(112deg, transparent 0%, rgba(240, 90, 26, 0.07) 36%, transparent 66%),
+      linear-gradient(290deg, transparent 0%, rgba(17, 24, 39, 0.045) 42%, transparent 72%);
+    opacity: 1;
+  }
+
+  .industrial-dark {
+    @apply relative overflow-hidden bg-graphite text-white;
+    background:
+      linear-gradient(132deg, #080d16 0%, #121a27 42%, #26313d 100%),
+      var(--color-graphite);
+  }
+
+  .industrial-dark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(116deg, rgba(240, 90, 26, 0.2) 0%, transparent 34%),
+      linear-gradient(304deg, rgba(37, 99, 235, 0.18) 0%, transparent 42%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, transparent 46%, rgba(0, 0, 0, 0.2) 100%);
+    opacity: 1;
+  }
+
+  .section-kicker {
+    @apply inline-flex items-center gap-2 rounded-card border border-slate-500/40 bg-white/75 px-3 py-2 text-xs font-black uppercase text-slate-800;
+  }
+
+  .section-kicker-dark {
+    @apply inline-flex items-center gap-2 rounded-card border border-white/15 bg-white/10 px-3 py-2 text-xs font-black uppercase text-orange-100;
+  }
+
+  .industrial-card {
+    @apply card border-slate-400/70 bg-[#fffdf7] transition duration-200 hover:-translate-y-1 hover:border-slate-700 hover:shadow-soft;
+  }
+
+  .industrial-panel {
+    @apply rounded-card border border-slate-500/60 bg-[#151a22] text-white shadow-card;
+  }
+
+  .hazard-strip {
+    background: repeating-linear-gradient(
+      -45deg,
+      #f5b82e 0 12px,
+      #15171b 12px 24px
+    );
+  }
+
+  .technical-label {
+    @apply font-mono text-xs font-black uppercase text-slate-500;
+  }
+
+  .technical-label-dark {
+    @apply font-mono text-xs font-black uppercase text-slate-300;
+  }
+}

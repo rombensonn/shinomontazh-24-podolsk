@@ -1,0 +1,37 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Индустриальная иллюстрация шиномонтажа</title>
+  <desc id="desc">Визуальная иллюстрация колеса и рабочей зоны. Не является фотографией конкретного сервиса.</desc>
+  <rect width="1200" height="900" fill="#111827"/>
+  <path d="M0 0H1200V900H0V0Z" fill="url(#paint0_linear)"/>
+  <path opacity=".18" d="M0 706H1200V900H0V706Z" fill="#020617"/>
+  <path opacity=".16" d="M64 96H1136M64 176H1136M64 256H1136M64 336H1136M64 416H1136M64 496H1136M64 576H1136M64 656H1136M64 736H1136M160 48V820M320 48V820M480 48V820M640 48V820M800 48V820M960 48V820" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M0 707H1200" stroke="#EA580C" stroke-width="8"/>
+  <path d="M52 711H214L178 758H16L52 711ZM280 711H442L406 758H244L280 711ZM508 711H670L634 758H472L508 711ZM736 711H898L862 758H700L736 711ZM964 711H1126L1090 758H928L964 711Z" fill="#F59E0B"/>
+  <rect x="745" y="132" width="284" height="420" rx="8" fill="#1F2937" stroke="#475569" stroke-width="4"/>
+  <rect x="775" y="168" width="224" height="42" rx="6" fill="#334155"/>
+  <rect x="775" y="236" width="142" height="18" rx="4" fill="#64748B"/>
+  <rect x="775" y="278" width="192" height="18" rx="4" fill="#64748B"/>
+  <rect x="775" y="320" width="166" height="18" rx="4" fill="#64748B"/>
+  <rect x="775" y="400" width="116" height="68" rx="6" fill="#EA580C"/>
+  <path d="M312 690C469.953 690 598 561.953 598 404C598 246.047 469.953 118 312 118C154.047 118 26 246.047 26 404C26 561.953 154.047 690 312 690Z" fill="#020617"/>
+  <path d="M312 624C433.503 624 532 525.503 532 404C532 282.497 433.503 184 312 184C190.497 184 92 282.497 92 404C92 525.503 190.497 624 312 624Z" fill="#111827" stroke="#64748B" stroke-width="18"/>
+  <path d="M312 544C389.32 544 452 481.32 452 404C452 326.68 389.32 264 312 264C234.68 264 172 326.68 172 404C172 481.32 234.68 544 312 544Z" fill="#E5E7EB"/>
+  <path d="M312 496C362.81 496 404 454.81 404 404C404 353.19 362.81 312 312 312C261.19 312 220 353.19 220 404C220 454.81 261.19 496 312 496Z" fill="#1F2937"/>
+  <path d="M312 452C338.51 452 360 430.51 360 404C360 377.49 338.51 356 312 356C285.49 356 264 377.49 264 404C264 430.51 285.49 452 312 452Z" fill="#EA580C"/>
+  <path d="M312 158V244M312 564V650M66 404H152M472 404H558M138 230L200 292M424 516L486 578M486 230L424 292M200 516L138 578" stroke="#94A3B8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M628 588L1110 588" stroke="#CBD5E1" stroke-width="16" stroke-linecap="round"/>
+  <path d="M662 638H1094" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+  <rect x="648" y="616" width="72" height="52" rx="8" fill="#EA580C"/>
+  <rect x="786" y="616" width="72" height="52" rx="8" fill="#EA580C"/>
+  <rect x="924" y="616" width="72" height="52" rx="8" fill="#EA580C"/>
+  <text x="887" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#F8FAFC">24/7</text>
+  <text x="887" y="444" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">1500-2000</text>
+  <text x="887" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF">руб.</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="126" y1="86" x2="1067" y2="874" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#334155"/>
+      <stop offset=".44" stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+</svg>

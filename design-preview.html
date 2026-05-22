@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Шиномонтаж 24 - дизайн-превью</title>
+    <style>
+      :root {
+        --bg: #ebe7df;
+        --surface: #fffdf7;
+        --text: #15171b;
+        --muted: #ded8cc;
+        --border: #c8c0b2;
+        --primary: #f05a1a;
+        --dark: #111827;
+        --blue: #2563eb;
+      }
+      body {
+        margin: 0;
+        font-family: Manrope, system-ui, sans-serif;
+        background: linear-gradient(180deg, #f7f2e8 0%, #ebe7df 46%, #f5f0e7 100%);
+        color: var(--text);
+      }
+      main {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 48px 20px;
+      }
+      .hero {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 24px;
+        box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+      }
+      h1 {
+        font-size: clamp(36px, 6vw, 64px);
+        line-height: 1.05;
+        margin: 0 0 16px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.65;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .button {
+        border-radius: 8px;
+        padding: 14px 18px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .primary {
+        background: var(--primary);
+        color: white;
+      }
+      .secondary {
+        border: 1px solid var(--border);
+        color: var(--text);
+        background: white;
+      }
+      .swatches {
+        display: flex;
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .swatch {
+        width: 72px;
+        height: 72px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+      }
+      @media (max-width: 760px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <p>Круглосуточно в Подольске</p>
+          <h1>Круглосуточный шиномонтаж в Подольске</h1>
+          <p>Переобувка, балансировка, ремонт проколов и проверка давления на ул. Академика Доллежаля, 42.</p>
+          <div class="actions">
+            <a class="button primary" href="tel:+79647010010">Позвонить сейчас</a>
+            <a class="button secondary" href="#contacts">Построить маршрут</a>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Индустриальный тон</strong>
+          <p>Бетонная база, графитовые панели, сигнальный оранжевый CTA, синий только для маршрута. Секции выглядят как рабочие табло, а не SaaS-карточки.</p>
+          <div class="swatches">
+            <div class="swatch" style="background:#ebe7df"></div>
+            <div class="swatch" style="background:#111827"></div>
+            <div class="swatch" style="background:#f05a1a"></div>
+            <div class="swatch" style="background:#2563eb"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

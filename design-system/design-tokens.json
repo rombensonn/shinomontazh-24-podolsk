@@ -1,0 +1,35 @@
+{
+  "color": {
+    "background": "#EBE7DF",
+    "surface": "#FFFDF7",
+    "foreground": "#15171B",
+    "muted": "#DED8CC",
+    "border": "#C8C0B2",
+    "graphite": "#111827",
+    "steel": "#28313D",
+    "warning": "#F5B82E",
+    "primary": "#F05A1A",
+    "primaryHover": "#C8430C",
+    "onPrimary": "#FFFFFF",
+    "accent": "#2563EB",
+    "accentSoft": "#DBEAFE"
+  },
+  "radius": {
+    "card": "8px",
+    "control": "8px"
+  },
+  "space": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "section": "72px"
+  },
+  "typography": {
+    "family": "Manrope",
+    "monoFamily": "Space Mono",
+    "bodySize": "16px",
+    "bodyLineHeight": "1.65"
+  }
+}
