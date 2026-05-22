@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BadgeCheck, CreditCard, MapPinned, Phone, Star, Wrench } from "lucide-react";
-import { business } from "@/lib/site";
+import { business, withBasePath } from "@/lib/site";
 import { MotionSection } from "@/components/MotionSection";
 
 const heroBullets = [
@@ -65,7 +65,7 @@ export function Hero() {
           <div className="grid gap-0 sm:grid-cols-[1fr_190px] lg:grid-cols-1">
             <div className="relative aspect-[4/3] bg-slate-900">
               <Image
-                src="/hero-tire-service-phone.webp"
+                src={withBasePath("/hero-tire-service-phone.webp")}
                 alt="Фото-образ шиномонтажного поста с колесом на балансировочном станке"
                 fill
                 priority

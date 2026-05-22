@@ -5,6 +5,7 @@ import path from "node:path";
 const projectRoot = process.cwd();
 const apiDirectory = path.join(projectRoot, "app", "api");
 const backupDirectory = path.join(projectRoot, ".github-pages-api-backup");
+const nextDirectory = path.join(projectRoot, ".next");
 
 function run(command, args) {
   const result = spawnSync(command, args, {
@@ -49,8 +50,10 @@ function restoreApiRoutes(wasMoved) {
 const wasMoved = moveApiRoutesOutOfStaticBuild();
 
 try {
+  fs.rmSync(nextDirectory, { force: true, recursive: true });
   run("node", ["scripts/generate-seo-files.mjs"]);
   run("npx", ["next", "build"]);
 } finally {
   restoreApiRoutes(wasMoved);
+  fs.rmSync(nextDirectory, { force: true, recursive: true });
 }
